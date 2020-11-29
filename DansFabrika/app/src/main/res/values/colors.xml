@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="lightTextColor" type="color">#e7eff8</item>
+    <item name="lightTextColorBackGround" type="color">#55000000</item>
+    <item name="transparentColor" type="color">#00000000</item>
+    <item name="listSelectorColor" type="color">#ffe6e6e6</item>
+    <item name="whiteColor" type="color">#ffe64824</item>
+    <item name="whiteColor2" type="color">#ff55e6ab</item>
+    <item name="onclickColor" type="color">#ffe4e4e4</item>
+</resources>

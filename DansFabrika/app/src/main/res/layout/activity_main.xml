@@ -1,0 +1,592 @@
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/backgroundMainStyle"
+    android:gravity="center"
+    android:fillViewport="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+android:gravity="center_horizontal"
+        >
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/llMainButtons"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal">
+            <org.apmem.tools.layouts.FlowLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:f="http://schemas.android.com/apk/res/com.eylulakar.dansfabrika"
+                f:horizontalSpacing="10dp"
+                f:verticalSpacing="10dp"
+                f:centerJustified="true"
+                f:layout_centerJustified="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <RelativeLayout
+                    android:id="@+id/rlMainNews"
+                    android:layout_width="@dimen/home_button_width"
+                    android:layout_height="@dimen/home_button_height"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    style="@style/btnGeneralMain">
+
+                    <ImageButton
+                        android:id="@+id/btnNewsList"
+                        android:onClick="onbtnNewsListClick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/home_button_imgbtn_height"
+                        android:src="@drawable/ic_news"
+                        style="@style/imgbtnHome"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/btnNewsList"
+                        android:text="Haberler" />
+                </RelativeLayout>
+
+                <!-- <Button
+                     android:id="@+id/btnNewsList"
+                     android:onClick="onbtnNewsListClick"
+                     android:text="Haberler"
+                     android:layout_width="@dimen/home_button_width"
+                     android:layout_height="@dimen/home_button_height"
+                     android:layout_marginLeft="10dp"
+                     style="@style/btnGeneralMain"
+                     android:drawableTop="@drawable/ic_contact"
+                     android:drawablePadding="-15sp"
+                     android:padding="10dp"
+                     />
+
+ -->
+
+
+                <RelativeLayout
+                    android:id="@+id/rlMainStudioPhotos"
+                    android:layout_width="@dimen/home_button_width"
+                    android:layout_height="@dimen/home_button_height"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    style="@style/btnGeneralMain">
+
+                    <ImageButton
+                        android:id="@+id/btnStudioPhotoList"
+                        android:onClick="onbtnStudioPhotoListClick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/home_button_imgbtn_height"
+                        android:src="@drawable/ic_photo"
+                        style="@style/imgbtnHome"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/btnStudioPhotoList"
+                        android:text="Stüdyo Fotoğraflar" />
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/rlMainStudioVideos"
+                    android:layout_width="@dimen/home_button_width"
+                    android:layout_height="@dimen/home_button_height"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    style="@style/btnGeneralMain">
+
+                    <ImageButton
+                        android:id="@+id/btnStudioVideosList"
+                        android:onClick="onbtnStudioVideosListClick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/home_button_imgbtn_height"
+                        android:src="@drawable/ic_video2"
+                        style="@style/imgbtnHome"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/btnStudioVideosList"
+
+                        android:text="Stüdyo Videolar"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlMainVideos"
+                    android:layout_width="@dimen/home_button_width"
+                    android:layout_height="@dimen/home_button_height"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    style="@style/btnGeneralMain">
+
+                    <ImageButton
+                        android:id="@+id/btnVideosList"
+                        android:onClick="onbtnVideosListClick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/home_button_imgbtn_height"
+                        android:src="@drawable/ic_video"
+                        style="@style/imgbtnHome"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/btnVideosList"
+
+                        android:text="İşler" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rlMainDancers"
+                    android:layout_width="@dimen/home_button_width"
+                    android:layout_height="@dimen/home_button_height"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    style="@style/btnGeneralMain">
+
+                    <ImageButton
+                        android:id="@+id/btnDancersList"
+                        android:onClick="onbtnDancersListClick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/home_button_imgbtn_height"
+                        android:src="@drawable/ic_dancers"
+                        style="@style/imgbtnHome"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/btnDancersList"
+                        android:text="Kadromuz" />
+                </RelativeLayout>
+
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/rlCastReferenceList"
+                    android:layout_width="@dimen/home_button_width"
+                    android:layout_height="@dimen/home_button_height"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    style="@style/btnGeneralMain">
+
+                    <ImageButton
+                        android:id="@+id/btnCastReferenceList"
+                        android:onClick="onbtnCastReferenceListClick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/home_button_imgbtn_height"
+                        android:src="@drawable/ic_castref"
+                        style="@style/imgbtnHome"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/btnCastReferenceList"
+                        android:text="Cast Referanslar" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlMainArtistList"
+                    android:layout_width="@dimen/home_button_width"
+                    android:layout_height="@dimen/home_button_height"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    style="@style/btnGeneralMain">
+
+                    <ImageButton
+                        android:id="@+id/btnArtistList"
+                        android:onClick="onbtnArtistListClick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/home_button_imgbtn_height"
+                        android:src="@drawable/ic_star"
+                        style="@style/imgbtnHome"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/btnArtistList"
+                        android:text="Sanatçılar" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rlMaiReferenceList"
+                    android:layout_width="@dimen/home_button_width"
+                    android:layout_height="@dimen/home_button_height"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    style="@style/btnGeneralMain">
+
+                    <ImageButton
+                        android:id="@+id/btnReferenceList"
+                        android:onClick="onbtnReferenceListClick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/home_button_imgbtn_height"
+                        android:src="@drawable/ic_reference"
+                        style="@style/imgbtnHome"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/btnReferenceList"
+                        android:text="Referanslar" />
+                </RelativeLayout>
+
+
+
+
+
+
+
+                />
+                <RelativeLayout
+                    android:id="@+id/rlMainLocationPhotos"
+                    android:layout_width="@dimen/home_button_width"
+                    android:layout_height="@dimen/home_button_height"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    style="@style/btnGeneralMain">
+
+                    <ImageButton
+                        android:id="@+id/btnLocationPhotoList"
+                        android:onClick="onbtnLocationPhotoListClick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/home_button_imgbtn_height"
+                        android:src="@drawable/ic_stage"
+                        style="@style/imgbtnHome"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/btnLocationPhotoList"
+                        android:text="Sahne/Program" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rlMainProducts"
+                    android:layout_width="@dimen/home_button_width"
+                    android:layout_height="@dimen/home_button_height"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    style="@style/btnGeneralMain">
+
+                    <ImageButton
+                        android:id="@+id/btnProductsList"
+                        android:onClick="onbtnProductsListClick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/home_button_imgbtn_height"
+                        android:src="@drawable/ic_product"
+                        style="@style/imgbtnHome"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/btnProductsList"
+                        android:text="Ürünler" />
+                </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/rlMainFind"
+                    android:layout_width="@dimen/home_button_width"
+                    android:layout_height="@dimen/home_button_height"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    style="@style/btnGeneralMain">
+
+                    <ImageButton
+                        android:id="@+id/btnFind"
+                        android:onClick="onbtnFindClick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/home_button_imgbtn_height"
+                        android:src="@drawable/ic_location"
+                        style="@style/imgbtnHome"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/btnFind"
+                        android:text="Neredeyiz" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlMainContact"
+                    android:layout_width="@dimen/home_button_width"
+                    android:layout_height="@dimen/home_button_height"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    style="@style/btnGeneralMain">
+
+                    <ImageButton
+                        android:id="@+id/btnContact"
+                        android:onClick="onbtnContactClick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/home_button_imgbtn_height"
+                        android:src="@drawable/ic_contact"
+                        style="@style/imgbtnHome"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/btnContact"
+                        android:text="İletişim" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlMainShare"
+                    android:layout_width="@dimen/home_button_width"
+                    android:layout_height="@dimen/home_button_height"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    style="@style/btnGeneralMain"
+                    >
+
+                    <ImageButton
+                        android:id="@+id/btnShare"
+                        android:onClick="onbtnShareClick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/home_button_imgbtn_height"
+                        android:src="@drawable/ic_share"
+                        style="@style/imgbtnHome"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/btnShare"
+                        android:text="Uygulama Paylaş" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rlMainAbout"
+                    android:layout_width="@dimen/home_button_width"
+                    android:layout_height="@dimen/home_button_height"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    style="@style/btnGeneralMain"
+                    >
+
+                    <ImageButton
+                        android:id="@+id/btnAbout"
+                        android:onClick="onbtnAboutClick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/home_button_imgbtn_height"
+                        android:src="@drawable/ic_about"
+                        style="@style/imgbtnHome"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/btnAbout"
+                        android:text="Hakkımızda" />
+                </RelativeLayout>
+                <RelativeLayout
+                android:id="@+id/rlMainCall"
+                android:layout_width="@dimen/home_button_width"
+                android:layout_height="@dimen/home_button_height"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                style="@style/btnGeneralMain">
+
+                <ImageButton
+                    android:id="@+id/btnCall"
+                    android:onClick="onbtnCallClick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/home_button_imgbtn_height"
+                    android:src="@drawable/ic_call_green"
+                    style="@style/imgbtnHome"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/btnCall"
+                    android:text="Bizi Arayın" />
+            </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rlMainContactForm"
+                    android:layout_width="@dimen/home_button_width"
+                    android:layout_height="@dimen/home_button_height"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    style="@style/btnGeneralMain">
+
+                    <ImageButton
+                        android:id="@+id/btnContactForm"
+                        android:onClick="onbtnContactFormClick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/home_button_imgbtn_height"
+                        android:src="@drawable/ic_write"
+                        style="@style/imgbtnHome"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/btnContactForm"
+                        android:text="Bize Yazın" />
+                </RelativeLayout>
+
+            </org.apmem.tools.layouts.FlowLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            >
+
+            <ImageButton
+                android:id="@+id/btnFacebook"
+                android:onClick="onbtnFacebookClick"
+                android:layout_width="@dimen/home_bottom_button_imgbtn_height"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitStart"
+                android:src="@drawable/ic_fb"
+                style="@style/imgbtnHome"
+
+                />
+            <ImageButton
+                android:id="@+id/btnInstagram"
+                android:onClick="onbtnInstagramClick"
+                android:layout_width="@dimen/home_bottom_button_imgbtn_height"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitStart"
+                android:src="@drawable/ic_ins"
+                style="@style/imgbtnHome"
+                android:layout_marginLeft="10dp"
+                />
+
+            <ImageButton
+                android:id="@+id/btnYoutube"
+                android:onClick="onbtnYoutubeClick"
+                android:layout_width="@dimen/home_bottom_button_imgbtn_height"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitStart"
+                android:src="@drawable/ic_yt"
+                style="@style/imgbtnHome"
+                android:layout_marginLeft="10dp"
+                />
+            <ImageButton
+                android:id="@+id/btnTwitter"
+                android:onClick="onbtnTwitterClick"
+                android:layout_width="@dimen/home_bottom_button_imgbtn_height"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitStart"
+                android:src="@drawable/ic_tw"
+                style="@style/imgbtnHome"
+                android:layout_marginLeft="10dp"
+                />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</ScrollView>

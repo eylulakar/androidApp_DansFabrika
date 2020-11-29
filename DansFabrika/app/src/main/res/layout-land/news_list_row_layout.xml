@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:background="@drawable/roundcorner2"
+    android:layout_margin="20dp"
+    android:layout_centerInParent="true">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgNewsListImage"
+            android:adjustViewBounds="true"
+
+            />
+        <TextView
+            android:id="@+id/txtNewsListTitle"
+            android:layout_gravity="top"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            style="@style/textGeneralListTitle"
+            android:lines="2"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            style="@style/viewGeneralListLine"
+            />
+        <TextView
+            android:id="@+id/txtNewsListDescriptionShort"
+            android:layout_gravity="top"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            style="@style/textGeneralListDescription"
+            android:lines="7"
+            />
+
+    </TableLayout>
+</FrameLayout>

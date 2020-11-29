@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Dans Fabrika</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="maps_api_key_debug">AIzaSyCG6e_bHQCRjfRoOB8ytQ-tXmq958oaihk</string>
+    <string name="maps_api_key_release">AIzaSyBlmAHU26lPh99SI6_k4UteGWypCS9Ez1o</string>
+</resources>

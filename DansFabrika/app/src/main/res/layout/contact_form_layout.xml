@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/backgroundInnerStyle"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/roundcorner2">
+            <EditText
+                android:id="@+id/etxtContactFormFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ad Soyad"
+                android:maxLength="500"
+                android:inputType="textPersonName"
+                android:textColor="#343434"
+                android:textCursorDrawable="@null"
+               >
+            </EditText>
+
+        <EditText
+            android:id="@+id/etxtContactFormEmail"
+            android:layout_height="wrap_content"
+            android:hint="E-posta"
+            android:maxLength="500"
+            android:inputType="textPersonName"
+            android:layout_width="match_parent"
+            android:textCursorDrawable="@null">
+        </EditText>
+        <EditText
+            android:id="@+id/etxtContactFormMessage"
+            android:layout_height="wrap_content"
+            android:hint="Mesaj"
+            android:maxLength="1000"
+            android:inputType="textMultiLine"
+            android:gravity="top|left"
+            android:lines="5"
+            android:layout_width="match_parent"
+            android:textCursorDrawable="@null">
+        </EditText>
+
+         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <Button
+
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/btnSendMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GÖNDER"
+                android:onClick="onbtnSendMessageClick"
+                style="@style/btnGeneralMain"
+                android:typeface="sans"
+                android:textSize="15sp"
+                android:padding="10dp">
+            </Button>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

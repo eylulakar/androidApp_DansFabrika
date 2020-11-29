@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dancersList">
+        <item dfds="">Ömer Yeşilbaş</item>
+        <item>Cenk</item>
+        <item>Enes</item>
+        <item>Anıl </item>
+        <item>Kadir </item>
+        <item>Muko</item>
+        <item>Marul</item>
+    </string-array>
+
+</resources>

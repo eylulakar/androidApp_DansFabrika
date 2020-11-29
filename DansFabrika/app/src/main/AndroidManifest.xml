@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eylulakar.dansfabrika"
+    android:versionCode="14"
+    android:versionName="1.0">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- The following two permissions are not required to use
+         Google Maps Android API v2, but are recommended.
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/> -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+    <meta-data android:name="com.google.android.gms.version"
+        android:value="4030500" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Staff"
+            android:label="Kadromuz"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:parentActivityName="com.eylulakar.dansfabrika.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.eylulakar.dansfabrika.MainActivity" />
+        </activity>
+        <activity
+            android:name=".LocationAndProgram"
+            android:label="Sahne/Haftalık Program"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:parentActivityName="com.eylulakar.dansfabrika.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.eylulakar.dansfabrika.MainActivity" />
+        </activity>
+        <activity
+            android:name=".DancerList"
+            android:label="Dansçılar"
+            android:parentActivityName="com.eylulakar.dansfabrika.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.eylulakar.dansfabrika.MainActivity" />
+        </activity>
+        <activity
+            android:name=".DancerDetail"
+            android:label="Dansçı Detay"
+            android:parentActivityName="com.eylulakar.dansfabrika.Staff">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.eylulakar.dansfabrika.Staff" />
+        </activity>
+        <activity
+            android:name=".InstructorDetail"
+            android:label="Eğitmen Detay"
+            android:parentActivityName="com.eylulakar.dansfabrika.Staff">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.eylulakar.dansfabrika.Staff" />
+        </activity>
+        <activity
+            android:name=".StudioPhotoList"
+            android:label="Stüdyo Fotoğrafları"
+            android:parentActivityName="com.eylulakar.dansfabrika.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.eylulakar.dansfabrika.MainActivity" />
+        </activity>
+        <activity
+            android:name=".LocationPhotoList"
+            android:label="Sahne-Mekan"
+            android:parentActivityName="com.eylulakar.dansfabrika.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.eylulakar.dansfabrika.MainActivity" />
+        </activity>
+        <activity
+            android:name=".LocationPhotoDescription"
+            android:label="Sahne-Mekan"
+            android:parentActivityName="com.eylulakar.dansfabrika.LocationPhotoList">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.eylulakar.dansfabrika.LocationPhotoList" />
+        </activity>
+        <activity
+            android:name=".ProductList"
+            android:label="Ürünler"
+            android:parentActivityName="com.eylulakar.dansfabrika.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.eylulakar.dansfabrika.MainActivity" />
+        </activity>
+        <activity
+            android:name=".CastReferenceList"
+            android:label="Cast Referanslar"
+            android:parentActivityName="com.eylulakar.dansfabrika.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.eylulakar.dansfabrika.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ArtistList"
+            android:label="Sanatçılar"
+            android:parentActivityName="com.eylulakar.dansfabrika.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.eylulakar.dansfabrika.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ReferenceList"
+            android:label="Referanslar"
+            android:parentActivityName="com.eylulakar.dansfabrika.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.eylulakar.dansfabrika.MainActivity" />
+        </activity>
+        <activity
+            android:name=".StudioVideoList"
+            android:label="Stüdyo Videolar"
+            android:parentActivityName="com.eylulakar.dansfabrika.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.eylulakar.dansfabrika.MainActivity" />
+        </activity>
+        <activity
+            android:name=".StudioVideoDetail"
+            android:label="Stüdyo Video Detay"
+            android:parentActivityName="com.eylulakar.dansfabrika.StudioVideoList">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.eylulakar.dansfabrika.StudioVideoList" />
+        </activity>
+        <activity
+            android:name=".VideoList"
+            android:label="İşler"
+            android:parentActivityName="com.eylulakar.dansfabrika.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.eylulakar.dansfabrika.MainActivity" />
+        </activity>
+        <activity
+            android:name=".VideoDetail"
+            android:label="Video Detay"
+            android:parentActivityName="com.eylulakar.dansfabrika.VideoList">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.eylulakar.dansfabrika.VideoList" />
+        </activity>
+        <activity
+            android:name=".ContactForm"
+            android:label="Bize Yazın"
+            android:parentActivityName="com.eylulakar.dansfabrika.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.eylulakar.dansfabrika.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Contact"
+            android:label="İletişim"
+            android:parentActivityName="com.eylulakar.dansfabrika.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.eylulakar.dansfabrika.MainActivity" />
+        </activity>
+        <activity
+            android:name=".About"
+            android:label="Hakkımızda"
+            android:parentActivityName="com.eylulakar.dansfabrika.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.eylulakar.dansfabrika.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Map"
+            android:label="Neredeyiz"
+            android:parentActivityName="com.eylulakar.dansfabrika.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.eylulakar.dansfabrika.MainActivity" />
+        </activity>
+        <activity
+            android:name=".NewsList"
+            android:label="Haberler"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:parentActivityName="com.eylulakar.dansfabrika.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.eylulakar.dansfabrika.MainActivity" />
+        </activity>
+        <activity
+            android:name=".NewsDetail"
+            android:label="Haber Detay"
+            android:parentActivityName="com.eylulakar.dansfabrika.NewsList">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.eylulakar.dansfabrika.NewsList" />
+        </activity>
+        <!--  <meta-data
+             android:name="com.google.android.maps.v2.API_KEY"
+             android:value="@string/maps_api_key_debug"/>-->
+       <meta-data
+                android:name="com.google.android.maps.v2.API_KEY"
+                android:value="@string/maps_api_key_release"/>
+       </application>
+
+   </manifest>
